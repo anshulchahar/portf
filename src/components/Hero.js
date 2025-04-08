@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="mt-10 md:mt-0 md:w-1/3">
             <div className="aspect-w-1 aspect-h-1 rounded-full overflow-hidden border-4 border-primary-dark dark:border-primary-light shadow-xl">
               <img 
-                src="/Photo.jpeg" 
+                src={process.env.PUBLIC_URL + "/Photo.jpeg"}
                 alt="Anshul Chahar" 
                 className="object-cover w-full h-full"
               />
