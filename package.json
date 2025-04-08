@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anshulchahar.github.io/portfolio/",
+  "homepage": "https://anshulchahar.github.io/portf/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/typography": "^0.5.16",
