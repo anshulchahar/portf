@@ -30,7 +30,7 @@ const ProjectSolvaAI = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <img 
-              src="/Solva.png" 
+              src={process.env.PUBLIC_URL + "/Solva.png"} 
               alt="SolvaAI Project" 
               className="w-full h-auto rounded-lg shadow-md mb-8"
             />

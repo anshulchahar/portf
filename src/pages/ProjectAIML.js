@@ -48,7 +48,7 @@ const ProjectAIML = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <img 
-              src="/AIML.jpg" 
+              src={process.env.PUBLIC_URL + "/AIML.jpg"} 
               alt="AI/ML Projects" 
               className="w-full h-auto rounded-lg shadow-md mb-8 object-cover"
             />

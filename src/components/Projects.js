@@ -6,7 +6,7 @@ const ProjectCard = ({ title, description, image, technologies, link }) => {
     <div className="bg-white dark:bg-dark-accent overflow-hidden shadow-sm rounded-lg border border-gray-100 dark:border-dark transition-all duration-300 hover:shadow-md">
       <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-dark relative">
         <img 
-          src={image} 
+          src={process.env.PUBLIC_URL + image} 
           alt={title} 
           className="w-full h-full object-cover"
         />
