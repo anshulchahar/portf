@@ -8,7 +8,7 @@ import { ThemeProvider } from '../context/ThemeContext';
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <ThemeProvider>
         <Routes>
           <Route path="/" element={<App />} />
