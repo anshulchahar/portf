@@ -1,6 +1,11 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+// Define fallback values to use if env vars are not available
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID 
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID 
+const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID 
+
 const Contact = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -21,12 +26,12 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
     
-    // EmailJS configuration using environment variables
+    // EmailJS configuration using constant variables
     emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
       form.current,
-      process.env.REACT_APP_EMAILJS_USER_ID
+      EMAILJS_USER_ID
     )
     .then((result) => {
       console.log('Email sent successfully:', result.text);
