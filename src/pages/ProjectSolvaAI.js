@@ -178,6 +178,18 @@ const ProjectSolvaAI = () => {
                 </div>
 
                 <div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Official Website</p>
+                  <a 
+                    href="https://solva.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-base text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    visit solva.com
+                  </a>
+                </div>
+                
+                <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">API Endpoints</p>
                   <ul className="mt-2 text-base text-gray-900 dark:text-white list-disc pl-5 space-y-1">
                     <li>Document analysis</li>

@@ -11,7 +11,7 @@ const Hero = () => {
               <span className="block text-primary-dark dark:text-primary-light">Anshul Chahar</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-400 sm:text-lg md:mt-5 md:text-xl">
-              Emerging Software Engineer
+              Computer Science Student at TU Darmstadt
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
               <a href="mailto:rohitchahar0987@gmail.com" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white dark:text-gray-900 bg-primary-dark dark:bg-primary-light hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors">
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="mt-10 md:mt-0 md:w-1/3">
             <div className="aspect-w-1 aspect-h-1 rounded-full overflow-hidden border-4 border-primary-dark dark:border-primary-light shadow-xl">
               <img 
-                src="/Photo.jpeg" 
+                src={process.env.PUBLIC_URL + "/Photo.jpeg"} 
                 alt="Anshul Chahar" 
                 className="object-cover w-full h-full"
               />

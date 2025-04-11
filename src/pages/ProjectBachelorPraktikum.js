@@ -29,11 +29,18 @@ const ProjectBachelorPraktikum = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <img 
-              src={process.env.PUBLIC_URL + "/Kraken.png"} 
-              alt="LabKraken Project" 
-              className="w-full h-auto rounded-lg shadow-md mb-8"
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <img 
+                src={process.env.PUBLIC_URL + "/Kraken.png"} 
+                alt="LabKraken Project" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+              <img 
+                src={process.env.PUBLIC_URL + "/krak.png"} 
+                alt="LabKraken Interface" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
             
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <h2>Project Overview</h2>
